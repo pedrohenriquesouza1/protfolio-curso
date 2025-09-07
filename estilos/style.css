@@ -1,9 +1,50 @@
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #f5f5f5;
+    --texto: #2222;
+    --texto-inverso: #ffffff; 
+    --destaque: #0077ff;
+    --destaque-inverso: #66bbff;
+    --fundo-card: #ffff;
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+  text-align: center;
+}
+
+header {
+  background-color: var(--destaque);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+/* qualquer mudança nos links mudar aqui primeiro, criando classes ou só mudando aqui mesmo */
+a {
+  text-decoration: none;
+  color: var(--texto-inverso);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: color .3s, background-color .5s;
+}
+
+a:hover {
+  background-color: var(--destaque-inverso);
+}
