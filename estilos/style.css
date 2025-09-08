@@ -35,16 +35,22 @@ ul {
   display: flex;
   gap: 10px;
 }
+
 /* qualquer mudança nos links mudar aqui primeiro, criando classes ou só mudando aqui mesmo */
+
 a {
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: bold;
-  padding: 8px 15px;
+  padding: 10px;
   border-radius: 8px;
   transition: color .3s, background-color .5s;
 }
 
 a:hover {
   background-color: var(--destaque-inverso);
+}
+
+i {
+  padding: 10px;
 }
