@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -15,7 +17,6 @@
     --fundo-card: #ffff;
 }
 
-/*MUDAR FONTE PARA INTER E ROBOTO */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +42,18 @@ ul {
 /* qualquer mudança nos links mudar aqui primeiro, criando classes ou só mudando aqui mesmo */
 
 a {
+  text-decoration: none;
+  color: var(--texto-inverso);
+  font-weight: bold;
+  border-radius: 8px;
+  transition: color .3s, background-color .5s;
+}
+
+a:hover {
+  background-color: var(--destaque-inverso);
+}
+
+.especial-link-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,10 +63,6 @@ a {
   padding: 5px;
   border-radius: 8px;
   transition: color .3s, background-color .5s;
-}
-
-a:hover {
-  background-color: var(--destaque-inverso);
 }
 
 main {
@@ -82,4 +91,18 @@ img.foto {
 #ficha > h1 {
   color: var(--destaque);
   margin: 20px 0px;font-size: large;
+}
+
+#social {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3em;
+}
+
+ion-icon {
+  color: var(--texto);
+  padding: 5px;
 }
