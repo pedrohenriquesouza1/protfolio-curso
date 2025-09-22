@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +23,6 @@
 
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--fundo-principal);
   color: var(--texto);
   text-align: center;
@@ -65,16 +68,6 @@ a:hover {
   transition: color .3s, background-color .5s;
 }
 
-.footer-link {
-  color: var(--texto);
-  font-size: 17px;
-  padding: 5px;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
@@ -87,8 +80,9 @@ main {
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
-  grid-column: 1;
+  grid-column: 2 / 3;
   grid-row: 2 / 3;
+  font-size: 1.3em;
 }
 
 img.foto {
@@ -106,7 +100,8 @@ img.foto {
 
 #ficha > h1 {
   color: var(--destaque);
-  margin: 20px 0px;font-size: large;
+  margin: 20px 0px;
+  font-size: large;
 }
 
 #social {
@@ -126,3 +121,46 @@ ion-icon {
 ion-icon:hover {
   color: var(--texto-inverso);
 }
+
+#detalhes {
+  grid-row: 3;
+  grid-column: 2;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: var(--fundo-card);
+}
+
+article {
+  background-color: var(--fundo-card);
+  padding: 30px;
+}
+/* trecho da animação no lugar do vídeo */
+.banner {
+  background: linear-gradient(135deg, #0077ff, #66bbff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.typing {
+  display: inline-block;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40, end), blink .8s infinite;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/*fim do trecho de aimação */ 
