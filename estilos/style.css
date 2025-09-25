@@ -154,6 +154,13 @@ article {
   font-size: 2em;
 }
 
+#icon-person {
+  padding: 0;
+  padding-top: 8px;
+  display: inline-block;
+  color: var(--texto);
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
