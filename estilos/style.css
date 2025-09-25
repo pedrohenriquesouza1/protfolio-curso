@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -101,7 +97,7 @@ img.foto {
 #ficha > h1 {
   color: var(--destaque);
   margin: 20px 0px;
-  font-size: large;
+  font-size: larger;
 }
 
 #social {
@@ -127,6 +123,8 @@ ion-icon:hover {
   grid-column: 2;
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-items: stretch;
   border-radius: 20px;
   padding: 25px;
   background-color: var(--fundo-card);
@@ -135,30 +133,42 @@ ion-icon:hover {
 article {
   background-color: var(--fundo-card);
   padding: 30px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
+
+h2 {
+  display: block;
+  font-size: 2em;
+  color: var(--destaque);
+}
+
 /* trecho da animação no lugar do vídeo */
 .banner {
   background: linear-gradient(135deg, #0077ff, #66bbff);
   color: white;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', 'Roboto', sans-serif; /* usa as fontes que você já importou */
 }
 
 .typing {
-  display: inline-block;
+  display: inline-block; /* melhor que block p/ centralizar com o texto */
   border-right: 2px solid white;
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
-  animation: typing 4s steps(40, end), blink .8s infinite;
   font-size: 2em;
+  animation: typing 4s steps(40, end), blink .8s step-end infinite;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 #icon-person {
-  padding: 0;
-  padding-top: 8px;
+  font-size: 30px;
   display: inline-block;
-  color: var(--texto);
+  color: var(--destaque);
+  vertical-align: middle; /* alinha melhor com texto se tiver lado a lado */
 }
 
 @keyframes typing {
@@ -170,4 +180,4 @@ article {
   50% { border-color: transparent }
 }
 
-/*fim do trecho de aimação */ 
+/* fim do trecho de animação */
