@@ -103,7 +103,7 @@ img.foto {
 #ficha > h1 {
   color: var(--destaque);
   margin: 20px 0px;
-  font-size: larger;
+  font-family: 'Roboto', sans-serif;
 }
 
 #social {
@@ -133,7 +133,7 @@ ion-icon:hover {
   align-items: stretch;
   border-radius: 20px;
   padding: 25px;
-  background-color: var(--fundo-card);
+  background-color: var(--fundo-principal);
 }
 
 article {
@@ -142,12 +142,15 @@ article {
   max-width: 100%;
   overflow-wrap: break-word;
   box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 20px;
 }
 
 h2 {
   display: block;
   font-size: 2em;
   color: var(--destaque);
+  text-align: start;
 }
 
 /* trecho da animação no lugar do vídeo */
@@ -156,13 +159,13 @@ h2 {
   color: white;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Inter', 'Roboto', sans-serif; /* usa as fontes que você já importou */
+  font-family: 'Inter', 'Roboto', sans-serif; 
 }
 
 .typing {
-  display: inline-block; /* melhor que block p/ centralizar com o texto */
+  display: inline-block;
   border-right: 2px solid white;
-  white-space: wrap;
+  white-space: wrap; /* mudar isso na media query para telas maiores */
   overflow: hidden;
   font-size: 2em;
   animation: typing 4s steps(40, end), blink .8s step-end infinite;
@@ -170,11 +173,12 @@ h2 {
   overflow-wrap: break-word;
 }
 
-#icon-person {
+.icon-person {
   font-size: 30px;
   display: inline-block;
   color: var(--destaque);
   vertical-align: middle; /* alinha melhor com texto se tiver lado a lado */
+  pointer-events: none;
 }
 
 @keyframes typing {
