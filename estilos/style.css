@@ -151,6 +151,7 @@ h2 {
   font-size: 2em;
   color: var(--destaque);
   text-align: start;
+  margin-bottom: 15px;
 }
 
 /* trecho da animação no lugar do vídeo */
@@ -235,6 +236,38 @@ h2 {
   pointer-events: none;
   font-size: 1.3em;
 }
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.curso {
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 10px;
+  border-left: 3px solid var(--destaque-inverso);
+  text-align: start;
+
+}
+
+.curso:hover {
+  border-left-width: 15px;
+  cursor: pointer;
+  transition-duration: .5s;
+}
+
+.period {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.inst {
+  color: var(--destaque-inverso);
+  font-size: 1.4em;
+}
+
   /* se quiser mudar alguma coisa nas media queries em telas grandes ou adicionar, mexer abaixo */
 @media screen and (min-width: 767px) {
   .skill-container {
