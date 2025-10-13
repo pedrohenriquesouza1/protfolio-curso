@@ -126,41 +126,53 @@
                 <h2><ion-icon name="school-outline" class="icon-person"></ion-icon> Formação</h2>
 
                 <div id="formacao-container">
-                    <div class="curso">
-                        <p class="period">2022 - 2023</p>
-                        <h3 class="inst">Curso Em Vídeo</h3>
-                        <p class="cert">Modulo 1 Curso HTML5</p>
-                    </div>
+                    <button class="curso-btn" id="certificado-modulo1">
+                        <div class="curso">
+                            <p class="period">2022 - 2023</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Modulo 1 Curso HTML5</p>
+                        </div>
+                    </button>
 
-                    <div class="curso">
-                        <p class="period">2022 - 2023</p>
-                        <h3 class="inst">Curso Em Vídeo</h3>
-                        <p class="cert">Modulo 2 Curso HTML5</p>
-                    </div>
+                    <button class="curso-btn" id="certificado-modulo2">
+                        <div class="curso">
+                            <p class="period">2022 - 2023</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Modulo 2 Curso HTML5</p>
+                        </div>
+                    </button>
 
-                    <div class="curso">
-                        <p class="period">2025</p>
-                        <h3 class="inst">Curso Em Vídeo</h3>
-                        <p class="cert">Modulo 3 Curso HTML5</p>
-                    </div>
+                    <button class="curso-btn" id="certificado-modulo3">
+                        <div class="curso">
+                            <p class="period">2025</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Modulo 3 Curso HTML5</p>
+                        </div>
+                    </button>
 
-                    <div class="curso">
-                        <p class="period">2025</p>
-                        <h3 class="inst">Curso Em Vídeo</h3>
-                        <p class="cert">Modulo 4 Curso HTML5</p>
-                    </div>
+                    <button class="curso-btn" id="certificado-modulo4">
+                        <div class="curso">
+                            <p class="period">2025</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Modulo 4 Curso HTML5</p>
+                        </div>
+                    </button>
 
-                    <div class="curso">
-                        <p class="period">2025</p>
-                        <h3 class="inst">Curso Em Vídeo</h3>
-                        <p class="cert">Curso de Algoritmos Com Portugol Studio</p>
-                    </div>
+                    <button class="curso-btn" id="certificado-algoritmos">
+                        <div class="curso">
+                            <p class="period">2025</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Curso de Algoritmos Com Portugol Studio</p>
+                        </div>
+                    </button>
 
-                    <div class="curso">
-                        <p class="period">2025</p>
-                        <h3 class="inst">Curso Em Vídeo</h3>
-                        <p class="cert">Curso de Inteligência Artificial Modulo 1</p>
-                    </div>
+                    <button class="curso-btn" id="curso-ia">
+                        <div class="curso">
+                            <p class="period">2025</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Curso de Inteligência Artificial Modulo 1</p>
+                        </div>
+                    </button>
                 </div>
 
             </article>
@@ -191,13 +203,14 @@ footer-link {
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             const barras = document.querySelectorAll('.progress');
-         
+    
             barras.forEach(barra => {
                 const valor = barra.getAttribute('data-valor');
                 barra.style.width = valor + '%';
             });
         });
-      </script>
+    </script>
+    <script src="scripts/btn.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

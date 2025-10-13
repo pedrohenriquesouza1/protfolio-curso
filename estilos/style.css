@@ -243,6 +243,11 @@ h2 {
   gap: 20px;
 }
 
+.curso-btn {
+  border: none;
+  background-color: transparent;
+}
+
 .curso {
   background-color: var(--fundo-principal);
   padding: 10px;
