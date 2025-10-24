@@ -278,6 +278,12 @@ h2 {
   .skill-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .projeto { 
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+  }
 } 
 
 @media screen and (min-width: 1400px) { 
@@ -291,4 +297,44 @@ h2 {
     max-width: 100%;
     overflow-wrap: break-word;
   }
+
+  .projeto { 
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+  }
 }
+
+#project-container {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.projeto { 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  border-radius: 12px;
+  padding: 10px;
+  border-left: 5px solid var(--destaque-inverso);
+
+}
+
+.projeto:hover {
+  border-left-width: 15px;
+  transition-duration: .5s;
+}
+
+.foto-projeto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.descricao { 
+  cursor: pointer;
+}
+/* fazer cursor pointer no details */
