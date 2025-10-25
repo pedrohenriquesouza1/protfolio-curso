@@ -273,16 +273,62 @@ h2 {
   font-size: 1.4em;
 }
 
-  /* se quiser mudar alguma coisa nas media queries em telas grandes ou adicionar, mexer abaixo */
+#project-container {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.projeto { 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  border-radius: 12px;
+  padding: 10px;
+  border-left: 5px solid var(--destaque-inverso);
+  margin-top: 15px;
+}
+
+.projeto:hover {
+  border-left-width: 15px;
+  transition-duration: .5s;
+}
+
+.projeto-info {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.foto-projeto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.descricao { 
+  cursor: pointer;
+}
+
+
+
 @media screen and (min-width: 767px) {
   .skill-container {
     grid-template-columns: 1fr 1fr;
   }
 
   .projeto { 
-    display: flex;
-    flex-flow: row-reverse wrap;
+    flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .foto-projeto { 
+    max-width: 30%;
+    flex: 0 0 35%;              /* não cresce mais que 35% do card */
+    height: auto;               /* respeita aspect-ratio */
+    object-fit: cover;
   }
 } 
 
@@ -299,42 +345,20 @@ h2 {
   }
 
   .projeto { 
-    display: flex;
-    flex-flow: row-reverse wrap;
+    flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .foto-projeto { 
+    max-width: 30%;
+    flex: 0 0 35%;              /* não cresce mais que 35% do card */
+    height: auto;               
+    object-fit: cover;
+  }
+
+  .projeto-info {
+    text-align: left;
+    margin: 10px;
   }
 }
 
-#project-container {
-   display: flex;
-   flex-direction: column-reverse;
-}
-
-.projeto { 
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-color: var(--fundo-principal);
-  border-radius: 12px;
-  padding: 10px;
-  border-left: 5px solid var(--destaque-inverso);
-
-}
-
-.projeto:hover {
-  border-left-width: 15px;
-  transition-duration: .5s;
-}
-
-.foto-projeto {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 10px; 
-}
-
-.descricao { 
-  cursor: pointer;
-}
-/* fazer cursor pointer no details */
