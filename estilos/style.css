@@ -274,91 +274,131 @@ h2 {
 }
 
 #project-container {
-   display: flex;
-   flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse; /* timeline invertida no mobile */
+    gap: 20px;
 }
 
-.projeto { 
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-color: var(--fundo-principal);
-  border-radius: 12px;
-  padding: 10px;
-  border-left: 5px solid var(--destaque-inverso);
-  margin-top: 15px;
+/* Cada card de projeto */
+.projeto {
+    display: flex;
+    flex-direction: column; /* mobile: imagem acima do texto */
+    gap: 15px;
+    background-color: var(--fundo-principal);
+    border-radius: 12px;
+    padding: 10px;
+    border-left: 5px solid var(--destaque-inverso);
+    margin-top: 15px;
+    transition: border-left-width 0.5s;
 }
 
 .projeto:hover {
   border-left-width: 15px;
-  transition-duration: .5s;
 }
 
 .projeto-info {
   max-width: 90%;
-  text-align: center;
   margin: auto;
+  text-align: center; /* mobile: centralizado */
 }
 
 .foto-projeto {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 10px; 
+  display: block;
 }
 
-.descricao { 
+.descricao {
   cursor: pointer;
 }
 
-
-
-@media screen and (min-width: 767px) {
-  .skill-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .projeto { 
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .foto-projeto { 
-    max-width: 30%;
-    flex: 0 0 35%;              /* não cresce mais que 35% do card */
-    height: auto;               /* respeita aspect-ratio */
-    object-fit: cover;
-  }
-} 
-
-@media screen and (min-width: 1400px) { 
-    .typing {
-    display: inline-block;
-    border-right: 2px solid white;
-    white-space: nowrap; /* mudar isso na media query para telas maiores */
-    overflow: hidden;
-    font-size: 2em;
-    animation: typing 4s steps(40, end), blink .8s step-end infinite;
-    max-width: 100%;
-    overflow-wrap: break-word;
-  }
-
-  .projeto { 
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .foto-projeto { 
-    max-width: 30%;
-    flex: 0 0 35%;              /* não cresce mais que 35% do card */
-    height: auto;               
-    object-fit: cover;
-  }
-
-  .projeto-info {
-    text-align: left;
-    margin: 10px;
-  }
+.link-projeto {
+  display: block; /* ocupa o tamanho da imagem */
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  padding: 0;
 }
 
+.link-projeto:hover {
+  background: none;
+  color: inherit;
+}
+
+/* ✅ Ajustado para não distorcer e não sobrescrever a outra classe */
+.foto-peq {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 767px) {
+    .skill-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .projeto {
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+        align-items: center; /* centraliza verticalmente */
+    }
+
+    .link-projeto {
+      display: block;
+      max-width: 40%;
+    }
+
+    .foto-projeto {
+      max-width: 40%;
+      flex: 0 0 40%;
+      margin-left: auto;
+      object-fit: cover;
+      height: auto; /* respeita aspect-ratio */
+    }
+
+    .projeto-info {
+        text-align: center;
+        margin: 0;
+    }
+
+    .typing {
+      display: inline-block;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 2em;
+      animation: typing 4s steps(40, end), blink .8s step-end infinite;
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+} 
+/* NÃO MEXER DAQUI PRA FRENTE */
+@media screen and (min-width: 1400px) {
+    .projeto {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .foto-projeto {
+        flex: 0 0 60%;
+        max-width: 70%;
+    }
+
+    .projeto-info {
+        text-align: left;
+        margin-left: 20px;
+        min-width: 30%;
+        max-width: 55%;
+        flex: 1;
+    }
+
+    /* ✅ corrigida a classe equivocada */
+    .link-projeto {
+      flex: 0 0 35%;
+      text-align: end;
+    }
+}
