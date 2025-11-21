@@ -279,15 +279,21 @@ footer-link {
     </footer>
     <script src="scripts/script.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const barras = document.querySelectorAll('.progress');
-    
-            barras.forEach(barra => {
-                const valor = barra.getAttribute('data-valor');
-                barra.style.width = valor + '%';
+   // Quando o usuário rolar até a section #skills, as barras animam
+        const skillsSection = document.querySelector('#skills');
+        const progressBars = document.querySelectorAll('.progress');
+   
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+            progressBars.forEach(bar => {
+                 const finalWidth = bar.getAttribute('data-valor');
+                bar.style.width = finalWidth + "%";
             });
-        });
-    </script>
+            }
+        }, { threshold: 0.4 });
+   
+        observer.observe(skillsSection);
+    </script>       
     <script src="scripts/btn.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

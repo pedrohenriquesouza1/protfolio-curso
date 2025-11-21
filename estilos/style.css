@@ -234,6 +234,7 @@ h2 {
   width: 0;
   transition: width 2s ease-in-out; 
 }
+
 .icon-skill {
   vertical-align: middle;
   pointer-events: none;
