@@ -25,6 +25,16 @@ body {
   font-family: 'Inter', 'Roboto';
 }
 
+.escuro {
+   --fundo-principal: #030303a7;
+    --texto: #ffff;
+    --texto-inverso: #333333b8; 
+    --destaque: #ff5522;
+    --destaque-inverso: #a73917;
+    --fundo-card: #0000008d;
+    transition-duration: .5s;
+}
+
 header {
   background-color: var(--destaque);
   padding: 5px;
@@ -137,7 +147,7 @@ ion-icon:hover {
   align-items: stretch;
   border-radius: 20px;
   padding: 8px;
-  background-color: var(--fundo-principal);
+  background-color: var(--fundo-inverso);
   max-width: 100%;
 }
 
@@ -278,6 +288,11 @@ h2 {
 .inst {
   color: var(--destaque-inverso);
   font-size: 1.4em;
+}
+
+.cert {
+  color: var(--texto);
+  font-size: 1.2em;
 }
 
 #project-container {

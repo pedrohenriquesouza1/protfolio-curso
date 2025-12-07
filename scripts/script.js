@@ -1,4 +1,5 @@
-const botao = document.getElementById('botao-tema');
+// Seleciona o botão pelo atributo data-tema
+const botao = document.querySelector('[data-js="true"]');
 const body = document.body;
 
 // Persistência do tema
@@ -7,12 +8,12 @@ temaEscuro(temasalvo === 'escuro');
 
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
-  if (tipo == true) {
+  if (tipo === true) {
     body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    botao.innerHTML = '<span class="material-symbols-outlined">wb_sunny</span>';
   } else {
     body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
   }
 }
 
