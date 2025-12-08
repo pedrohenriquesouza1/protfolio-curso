@@ -4,8 +4,9 @@ const certificados = {
   "certificado-modulo3": "certificados/certificado-modulo3.pdf",
   "certificado-modulo4": "certificados/certificado-modulo4.pdf",
   "certificado-algoritmos": "certificados/certificado algoritmos.pdf",
-  "curso-ia": "certificados/curso-ia.pdf"
-};
+  "curso-ia" : "certificados/curso-ia.pdf",
+  "certificado-modulo5": "certificados/certificado-modulo5.pdf"
+}
 
 // Para cada id, adiciona o listener que abre o PDF
 Object.keys(certificados).forEach(id => {
