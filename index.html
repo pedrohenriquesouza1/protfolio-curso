@@ -5,9 +5,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Pedro Henrique</title>
       <link rel="stylesheet" href="estilos/style.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-         rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    </head>
    <body class="escuro">
@@ -46,7 +48,27 @@
                   <ion-icon name="person-circle-outline"  class="icon-person"></ion-icon>
                   Pedro Henrique
                </h2>
-               <img src="imagens/apresent-sec.png" alt="Minhas linguagens principais" id="imagem-linguagens">
+               <div class="code-window">
+                  <div class="window-header">
+                     <div class="dot red"></div>
+                     <div class="dot yellow"></div>
+                     <div class="dot green"></div>
+                     <span class="file-name">organizer.ts</span>
+                  </div>
+                  <div class="window-body">
+                     <pre><code><span class="keyword">interface</span> <span class="type">FileConfig</span> {
+  extension: <span class="string">'ts'</span> | <span class="string">'js'</span>;
+  targetDir: <span class="string">"dist"</span>;
+}
+
+<span class="keyword">function</span> <span class="function">optimizeWorkflow</span>(dev: <span class="type">Developer</span>) {
+  <span class="keyword">return</span> dev.use(<span class="string">'Vite'</span>).automate();
+}
+
+<span class="comment">// Status: Ready to build...</span>
+<span class="variable">></span> Executing <span class="keyword">FileOrganizer CLI</span>...</code></pre>
+                  </div>
+               </div>
             </article>
             <article id="skills">
                <h2><span class="material-icons">terminal</span> Tecnologias & Competências</h2>
@@ -181,77 +203,87 @@
                   Projetos
                </h2>
                <div id="project-container">
-                  <div class="projeto">
-                     <a href="projeto-video/video.html" target="_blank" class="link-projeto"><img src="imagens/projeto-01-videos.jpg" class="foto-projeto"></a>
-                     <div class="projeto-info">
-                        <p class="periodo">2022</p>
-                        <h3 class="titulo">Projeto de Vídeos</h3>
-                        <p>Projeto construído para aplicar inserção de vídeos</p>
-                        <details class="descricao">
-                           <summary>Saiba Mais...</summary>
-                           <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
-                        </details>
-                     </div>
-                  </div>
-                  <div class="projeto">
-                     <a href="https://pedrohenriquesouza1.github.io/projeto-android/" class="link-projeto" target="_blank"><img src="imagens/projeto-03-android.jpg" class="foto-projeto"></a>
-                     <div class="projeto-info">
-                        <p class="periodo">2022</p>
-                        <h3 class="titulo">Projeto Android</h3>
-                        <p>Projeto construído como para aplicar conehcimentos de imagens dinânicas</p>
-                        <details class="descricao">
-                           <summary>Saiba Mais...</summary>
-                           <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
-                        </details>
-                     </div>
-                  </div>
-                  <div class="projeto">
-                     <a href="https://pedrohenriquesouza1.github.io/projeto-social/" class="link-projeto" target="_blank"><img src="imagens/projeto-04-links.jpg" class="foto-projeto"></a>
-                     <div class="projeto-info">
-                        <p class="periodo">2025</p>
-                        <h3 class="titulo">Projeto Social</h3>
-                        <p>Projeto feito para testar o uso de imagens que rolam e o uso de botões também</p>
-                        <details class="descricao">
-                           <summary>Saiba Mais...</summary>
-                           <p>Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
-                        </details>
-                     </div>
-                  </div>
-                  <div class="projeto">
-                     <a href="https://pedrohenriquesouza1.github.io/projeto-cordel/" class="link-projeto" target="_blank"><img src="imagens/projeto-02-cordel.jpg" class="foto-projeto" class="foto-peq"></a>
-                     <div class="projeto-info">
-                        <p class="periodo">2025</p>
-                        <h3 class="titulo">Projeto Cordel</h3>
-                        <p>Projeto construído para apmpliar domínio em imagens principlamente com efeito paralaxe e dar os primeiros passos na responsividade</p>
-                        <details class="descricao">
-                           <summary>Saiba Mais...</summary>
-                           <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.</p>
-                        </details>
-                     </div>
-                  </div>
-                  <div class="projeto">
-                     <a href="https://pedrohenriquesouza1.github.io/projeto-login/" target="_blank" class="link-projeto"><img src="imagens/projeto-05-login.jpg" class="foto-projeto" class="foto-peq"></a>
-                     <div class="projeto-info">
-                        <p class="periodo">2025</p>
-                        <h3 class="titulo">Projeto Tela de Login</h3>
-                        <p>Projeto construído para dar importantes passos para o domínio de responsividade, media queries e efeitos suaves de transição</p>
-                        <details class="descricao">
-                           <summary>Saiba Mais...</summary>
-                           <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
-                        </details>
-                     </div>
-                  </div>
+                  <!-- 1. Gerenciador de Estoque para Revendedoras & Recibos -->
                   <div class="projeto">
                      <a href="https://gestao-revendedora.vercel.app/" target="_blank" class="link-projeto">
-                     <img src="imagens/projeto-07-gestao_revendedora.png" class="foto-projeto" class="foto-peq" alt="Projeto que gerencia estoque de revendoras de cosméticos">
+                        <img src="imagens/projeto-07-gestao_revendedora.png" class="foto-projeto" alt="Projeto de Gestão">
                      </a>
                      <div class="projeto-info">
                         <p class="periodo">2026</p>
-                        <h3 class="titulo">Gerenciador de estoque/Gerador de Recibos online</h3>
-                        <p>Esse projeto foi feito para facilitar o processo de gerenciamento de estoque e de cobrança de pedidos, ele pode ser usado por revendedoras de cosméticos, donos de pequenos comércios, ambulantes, etc...</p>
+                        <h3 class="titulo">Gerenciador de Estoque para Revendedoras & Recibos</h3>
+                        <p>Sistema focado em resolver problemas de inventário e automação de cobranças para pequenos negócios e revendedoras de cosméticos.</p>
+                        <div class="projeto-techs">
+                           <span class="tech-tag">JavaScript</span>
+                           <span class="tech-tag">Vite</span>
+                           <span class="tech-tag">UX Design</span>
+                        </div>
                         <details class="descricao">
-                           <summary>Saiba mais...</summary>
-                           <p>Este projeto foi feito em pouco mais de 1 mês e meio, ele foi idealizado como primeiro projeto prático e ele soluciona um problema real, ele foi o meu primeiro projeto em JavaScript depois da conslusão do curso e eu aprendi na prática vários conceitos diferentes apenas lendo documentação, para saber mais sobre as minhas decisões técnicas ou olhar o código, acesse o meu repositório no GitHub.</p>
+                           <summary>Ver detalhes técnicos...</summary>
+                           <p>Este projeto soluciona uma dor real de gestão. Implementei uma arquitetura focada em integridade de dados e facilidade de uso. Foi meu primeiro projeto com uso real e validado após dominar os fundamentos de JavaScript.</p>
+                        </details>
+                     </div>
+                  </div>
+
+                  <!-- 2. Organizador de Pesquisa Genealógica (CLI) -->
+                  <div class="projeto">
+                     <div class="terminal-preview">
+                        <div class="terminal-header">
+                           <span class="terminal-dot"></span>
+                           <span class="terminal-dot"></span>
+                           <span class="terminal-dot"></span>
+                        </div>
+                        <div class="terminal-content">
+                           <p><span class="prompt">$</span> npm run start</p>
+                           <p class="log-info">? Selecione a linhagem: <span class="highlight">Materna</span></p>
+                           <p class="log-success">✓ 15 registros militares movidos.</p>
+                           <p class="log-success">✓ 08 certidões organizadas.</p>
+                           <p class="log-done">Organização concluída com sucesso!</p>
+                        </div>
+                     </div>
+
+                     <div class="projeto-info">
+                        <p class="periodo">2026</p>
+                        <h3 class="titulo">Organizador de Pesquisa Genealógica (CLI)</h3>
+                        <p>Automação via linha de comando para triagem inteligente de documentos históricos e registros militares.</p>
+
+                        <div class="projeto-techs">
+                           <span class="tech-tag">TypeScript</span>
+                           <span class="tech-tag">Node.js</span>
+                           <span class="tech-tag">FS API</span>
+                           <span class="tech-tag">Inquirer</span>
+                        </div>
+
+                        <details class="descricao">
+                           <summary>Ver solução técnica...</summary>
+                           <p><strong>O Problema:</strong> Downloads acumulados de certidões e registros militares sem distinção entre ramos familiares.</p>
+                           <p><strong>Destaque Técnico:</strong> Desenvolvido com <strong>Node.js puro</strong> (File System API). O sistema valida caminhos, cria estruturas de diretórios dinamicamente e trata de forma robusta problemas de <em>paths</em> com espaços.</p>
+                           <a href="https://github.com/pedrohenriquesouza1/organizador-cli" target="_blank" class="repo-link">Ver Código no GitHub →</a>
+                        </details>
+                     </div>
+                  </div>
+
+                  <!-- 3. Sistema de Gestão de Estoque (MVP) -->
+                  <div class="projeto">
+                     <a href="https://pedrohenriquesouza1.github.io/gestor-estoque/" target="_blank" class="link-projeto">
+                        <img src="imagens/projeto-08-gestao-estoque.png" class="foto-projeto" alt="Interface do Gestor de Estoque">
+                     </a>
+
+                     <div class="projeto-info">
+                        <p class="periodo">2026</p>
+                        <h3 class="titulo">Sistema de Gestão de Estoque (MVP)</h3>
+                        <p>Solução robusta para controle de inventário validada em cenário real de revenda (O Boticário).</p>
+
+                        <div class="projeto-techs">
+                           <span class="tech-tag">Vanilla JS</span>
+                           <span class="tech-tag">LocalStorage</span>
+                           <span class="tech-tag">POO</span>
+                        </div>
+
+                        <details class="descricao">
+                           <summary>Ver arquitetura e resultados...</summary>
+                           <p><strong>Destaque Profissional:</strong> Aplicação testada com sucesso em campo com múltiplas revendedoras <strong>O Boticário</strong>.</p>
+                           <p><strong>Diferenciais Técnicos:</strong> Utiliza <strong>Programação Orientada a Objetos (POO)</strong> e persistência de dados via <strong>LocalStorage</strong> para funcionamento offline.</p>
+                           <a href="https://github.com/pedrohenriquesouza1/gestao-revendedora" target="_blank" class="repo-link">Ver Repositório & Documentação →</a>
                         </details>
                      </div>
                   </div>

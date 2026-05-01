@@ -178,24 +178,69 @@ h2 {
   text-align: center;
   font-family: 'Inter', 'Roboto', sans-serif; 
 }
-/*
-.typing {
-  display: inline-block;
-  border-right: 2px solid white;
-  white-space: wrap; 
-  overflow: hidden;
-  font-size: 2em;
-  animation: typing 4s steps(40, end), blink .8s step-end infinite;
-  max-width: 100%;
-  overflow-wrap: break-word;
-} */
+/* Container da Janela de Código */
+.code-window {
+    width: 100%;
+    max-width: 550px;
+    background-color: #1e1e1e; /* Cor padrão de editores de código */
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    border: 1px solid rgba(255,255,255,0.1);
+}
 
-#imagem-linguagens {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+/* Cabeçalho com os botões estilo Mac */
+.window-header {
+    background-color: #333;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.file-name {
+    color: #999;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+/* Corpo do Código */
+.window-body {
+    padding: 20px;
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+/* Syntax Highlighting (Cores do VS Code) */
+.keyword { color: #569cd6; }
+.type { color: #4ec9b0; }
+.string { color: #ce9178; }
+.function { color: #dcdcaa; }
+.comment { color: #6a9955; font-style: italic; }
+.variable { color: #9cdcfe; }
+
+/* Ajuste no Modo Escuro (caso queira mudar algo específico) */
+.escuro .code-window {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    border-color: var(--destaque-inverso);
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    .window-body { font-size: 0.75em; padding: 15px; }
 }
 
 .icon-person {
@@ -358,7 +403,7 @@ h2 {
 
 #project-container {
     display: flex;
-    flex-direction: column-reverse; /* timeline invertida no mobile */
+    flex-direction: column; 
     gap: 20px;
 }
 
@@ -396,6 +441,81 @@ h2 {
 
 .descricao {
   cursor: pointer;
+}
+
+.projeto-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+    justify-content: center; /* No mobile fica centralizado */
+}
+
+@media screen and (min-width: 767px) {
+    .projeto-techs { justify-content: flex-start; } /* No desktop alinha à esquerda */
+}
+
+.tech-tag {
+    background-color: var(--destaque);
+    color: white;
+    font-size: 0.75em;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projeto-info h3 {
+    color: var(--destaque);
+    margin-top: 5px;
+}
+
+/* Mockup de Terminal para projetos CLI */
+.terminal-preview {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8em;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+
+.terminal-header {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.terminal-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #444;
+}
+
+.terminal-content { color: #eee; text-align: left; }
+.prompt { color: #27c93f; font-weight: bold; }
+.log-info { color: #9cdcfe; }
+.log-success { color: #dcdcaa; }
+.log-done { color: #27c93f; margin-top: 5px; font-weight: bold; }
+.highlight { color: #ffbd2e; text-decoration: underline; }
+
+.repo-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--destaque);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.repo-link:hover {
+    border-bottom-color: var(--destaque);
+    padding-left: 5px;
 }
 
 .link-projeto {
