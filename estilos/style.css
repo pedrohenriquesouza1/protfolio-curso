@@ -178,16 +178,24 @@ h2 {
   text-align: center;
   font-family: 'Inter', 'Roboto', sans-serif; 
 }
-
+/*
 .typing {
   display: inline-block;
   border-right: 2px solid white;
-  white-space: wrap; /* mudar isso na media query para telas maiores */
+  white-space: wrap; 
   overflow: hidden;
   font-size: 2em;
   animation: typing 4s steps(40, end), blink .8s step-end infinite;
   max-width: 100%;
   overflow-wrap: break-word;
+} */
+
+#imagem-linguagens {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .icon-person {
@@ -418,7 +426,7 @@ footer {
         margin: 0;
     }
 
-    .typing {
+    /*.typing { Comentei essas duas classes pois não gostei da animação, decidindo se apago de vez ou aproveito outra animação
       display: inline-block;
       border-right: 2px solid white;
       white-space: normal;
@@ -427,7 +435,7 @@ footer {
       animation: typing 4s steps(40, end), blink .8s step-end infinite;
       max-width: 100%;
       overflow-wrap: break-word;
-    }
+    } */
 } 
 /* NÃO MEXER DAQUI PRA FRENTE */
 @media screen and (min-width: 1400px) {

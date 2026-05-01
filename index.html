@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Pedro Henrique</title>
+    <title>Pedro Henrique</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -26,7 +26,7 @@
         <section id="ficha">
             <img src="imagens/IMAGEM-IA.png" alt="Imagem FEITA POR IA BASEADA EM MIM" class="foto" title="Esta imagem foi gerada por Inteligência Artificial.">
             <h1>Pedro Henrique</h1>
-            <p>Estudante de tecnologia com foco em desenvolvimento web, apaixonado por programação e design de interfaces. Tenho experiência prática com HTML, CSS e Bootstrap, além de projetos com Grid e Flexbox, sempre buscando construir layouts modernos e responsivos. Sou curioso, gosto de desafios e estou sempre em busca de aprender novas ferramentas, incluindo Tailwind CSS e conceitos de inteligência artificial, para expandir minhas habilidades e me diferenciar no mercado.</p>
+            <p>Estudante de tecnologia com foco em desenvolvimento web. Tenho experiência prática com HTML, CSS e JavaScript, além de projetos interativos, sempre busco construir layouts modernos e responsivos. Eu gosto de aprender, gosto de desafios e sempre quero usar novas ferramentas incluindo frameworks em JS e mais linguagens para expandir minhas habilidades e me diferenciar no mercado.</p>
             <div id="social">
                 <a href="https://www.linkedin.com/in/pedro-henrique-38146a381/" target="_blank" rel="nofollow"><ion-icon name="logo-linkedin"></ion-icon></a>
                 <a href="https://github.com/pedrohenriquesouza1/" target="_blank" rel="nofollow"><ion-icon name="logo-github"></ion-icon></a>
@@ -36,104 +36,9 @@
             <article id="banner">
                 
                  <h2><ion-icon name="person-circle-outline"  class="icon-person"></ion-icon>Pedro Henrique</h2>
-                 <img src="imagens/apresent-sec.png" alt="Minhas linguagens principais" class="typing">
-                  <!-- trecho antigo que reutilizei o CSS inclusive:
-                <p class="typing">Formando uma base sólida em desenvolvimento web e entregando soluções</p> --> 
-            </article><!--fim vídeo-->
-            <!--
-             This section implements a simple horizontal growth animation for progress bars.
-             The animation's target width (or percentage) is dynamically set by reading
-             the value from a specific data attribute, "por" in case.
-            
-             The animation logic is managed by a dedicated script block, typically
-             located at the end of this document.
-            -->
-            <article id="skills">
-                <h2><span class="material-icons">code</span>Skills</h2>
-                <div class="skill-container">
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome"><ion-icon name="code-slash-outline" class="icon-skill"></ion-icon> HTML5</span>
-                            <span class="por">89%</span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" data-valor="89"></div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome"><ion-icon name="code-slash-outline" class="icon-skill"></ion-icon> CSS3</span>
-                            <span class="por">94%</span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" data-valor="94"></div>
-                         </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome"><ion-icon name="code-slash-outline" class="icon-skill"></ion-icon> JavaScript</span>
-                            <span class="por">30%</span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" data-valor="30"></div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome"><ion-icon name="code-slash-outline" class="icon-skill"></ion-icon> PHP</span>
-                            <span class="por">1%</span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" data-valor="1"></div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome"><ion-icon name="people-outline" class="icon-skill"></ion-icon> Comunicação</span>
-                            <span class="por">84%</span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" data-valor="84"></div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome"><ion-icon name="people-outline" class="icon-skill"></ion-icon> Trabalho em equipe</span>
-                            <span class="por">96%</span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" data-valor="96"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                    <div class="info">
-                        <span class="nome"><ion-icon name="people-outline" class="icon-skill"></ion-icon> Adaptabilidade</span>
-                        <span class="por">70%</span>
-                    </div>
-                    <div class="barra">
-                        <div class="progress" data-valor="70"></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><ion-icon name="people-outline" class="icon-skill"></ion-icon> Liderança</span>
-                        <span class="por">85%</span>
-                    </div>
-                    <div class="barra">
-                        <div class="progress" data-valor="85"></div>
-                    </div>
-                </div>
-                </div>
-
+                 <img src="imagens/apresent-sec.png" alt="Minhas linguagens principais" id="imagem-linguagens">
             </article>
-            <!--fim skills-->
+            
             <article id="certificados">
                 <h2><ion-icon name="school-outline" class="icon-person"></ion-icon> Formação</h2>
 
@@ -193,7 +98,15 @@
                             <p class="cert">Curso de Inteligência Artificial Modulo 1</p>
                         </div>
                     </button>
-                </div>
+                    <!-- só falta inserir certificado, esqueci de emitir!
+                    <button class="curso-btn" id="curso-js">
+                        <div class="curso">
+                            <p class="period">2025-2026</p>
+                            <h3 class="inst">Curso Em Vídeo</h3>
+                            <p class="cert">Curso de JavaScript básico 40 horas</p>
+                        </div>
+                    </button>
+                </div>-->
 
             </article>
             <!--fim ceritificados-->
@@ -258,11 +171,26 @@
 
                         <div class="projeto-info">
                             <p class="periodo">2025</p>
-                            <h3 class="titulo">Projeto Login</h3>
+                            <h3 class="titulo">Projeto Tela de Login</h3>
                             <p>Projeto construído para dar importantes passos para o domínio de responsividade, media queries e efeitos suaves de transição</p>
                             <details class="descricao">
                                 <summary>Saiba Mais...</summary>
                                 <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto">
+                        <a href="https://gestao-revendedora.vercel.app/" target="_blank" class="link-projeto">
+                            <img src="imagens/projeto-07-gestao_revendedora.png" class="foto-projeto" class="foto-peq" alt="Projeto que gerencia estoque de revendoras de cosméticos">
+                        </a>
+                        <div class="projeto-info">
+                            <p class="periodo">2026</p>
+                            <h3 class="titulo">Gerenciador de estoque/Gerador de Recibos online</h3>
+                            <p>Esse projeto foi feito para facilitar o processo de gerenciamento de estoque e de cobrança de pedidos, ele pode ser usado por revendedoras de cosméticos, donos de pequenos comércios, ambulantes, etc...</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Este projeto foi feito em pouco mais de 1 mês e meio, ele foi idealizado como primeiro projeto prático e ele soluciona um problema real, ele foi o meu primeiro projeto em JavaScript depois da conslusão do curso e eu aprendi na prática vários conceitos diferentes apenas lendo documentação, para saber mais sobre as minhas decisões técnicas ou olhar o código, acesse o meu repositório no GitHub.</p>
                             </details>
                         </div>
                     </div>
