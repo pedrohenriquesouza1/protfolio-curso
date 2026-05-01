@@ -1,228 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Henrique</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body class="escuro">
-    <header>
-        <nav id="menu">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pedro Henrique</title>
+      <link rel="stylesheet" href="estilos/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   </head>
+   <body class="escuro">
+      <header>
+         <nav id="menu">
             <ul>
-                <li><a href="#banner" class="especial-link-header"><span class="material-symbols-outlined">home</span></a></li>
-                <li><a href="#skills" class="especial-link-header"><span class="material-symbols-outlined">code</span></a></li>
-                <li><a href="#certificados" class="especial-link-header"><ion-icon name="school-outline" class="material-symbols-outlined"></ion-icon></a></li>
-                <li><a href="#projetos" class="especial-link-header"><span class="material-symbols-outlined">work</span></a></li>
-                <li><a href="#" class="especial-link-header" data-js="true"><span class="material-symbols-outlined">dark_mode</span></a></li> 
+               <li><a href="#banner" class="especial-link-header"><span class="material-symbols-outlined">home</span></a></li>
+               <li><a href="#skills" class="especial-link-header"><span class="material-symbols-outlined">code</span></a></li>
+               <li>
+                  <a href="#certificados" class="especial-link-header">
+                     <ion-icon name="school-outline" class="material-symbols-outlined"></ion-icon>
+                  </a>
+               </li>
+               <li><a href="#projetos" class="especial-link-header"><span class="material-symbols-outlined">work</span></a></li>
+               <li><a href="#" class="especial-link-header" data-js="true"><span class="material-symbols-outlined">dark_mode</span></a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="ficha">
+         </nav>
+      </header>
+      <main>
+         <section id="ficha">
             <img src="imagens/IMAGEM-IA.png" alt="Imagem FEITA POR IA BASEADA EM MIM" class="foto" title="Esta imagem foi gerada por Inteligência Artificial.">
             <h1>Pedro Henrique</h1>
             <p>Estudante de tecnologia com foco em desenvolvimento web. Tenho experiência prática com HTML, CSS e JavaScript, além de projetos interativos, sempre busco construir layouts modernos e responsivos. Eu gosto de aprender, gosto de desafios e sempre quero usar novas ferramentas incluindo frameworks em JS e mais linguagens para expandir minhas habilidades e me diferenciar no mercado.</p>
             <div id="social">
-                <a href="https://www.linkedin.com/in/pedro-henrique-38146a381/" target="_blank" rel="nofollow"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://github.com/pedrohenriquesouza1/" target="_blank" rel="nofollow"><ion-icon name="logo-github"></ion-icon></a>
+               <a href="https://www.linkedin.com/in/pedro-henrique-38146a381/" target="_blank" rel="nofollow">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+               </a>
+               <a href="https://github.com/pedrohenriquesouza1/" target="_blank" rel="nofollow">
+                  <ion-icon name="logo-github"></ion-icon>
+               </a>
             </div>
-        </section>
-        <section id="detalhes">
+         </section>
+         <section id="detalhes">
             <article id="banner">
-                
-                 <h2><ion-icon name="person-circle-outline"  class="icon-person"></ion-icon>Pedro Henrique</h2>
-                 <img src="imagens/apresent-sec.png" alt="Minhas linguagens principais" id="imagem-linguagens">
+               <h2>
+                  <ion-icon name="person-circle-outline"  class="icon-person"></ion-icon>
+                  Pedro Henrique
+               </h2>
+               <img src="imagens/apresent-sec.png" alt="Minhas linguagens principais" id="imagem-linguagens">
             </article>
-            
+            <article id="skills">
+               <h2><span class="material-icons">terminal</span> Tecnologias & Competências</h2>
+               <div class="skills-grid">
+                  <!-- Grupo 1: Core & Languages -->
+                  <div class="skill-category-card">
+                     <h3>Core & Languages</h3>
+                     <div class="badges-container">
+                        <div class="skill-badge">
+                           <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TS">
+                           <span>TypeScript</span>
+                        </div>
+                        <div class="skill-badge">
+                           <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JS">
+                           <span>JavaScript (ES6+)</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Grupo 2: Frontend & Tooling -->
+                  <div class="skill-category-card">
+                     <h3>Frontend & Tooling</h3>
+                     <div class="badges-container">
+                        <div class="skill-badge">
+                           <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite">
+                           <span>Vite</span>
+                        </div>
+                        <div class="skill-badge">
+                           <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+                           <span>HTML5</span>
+                        </div>
+                        <div class="skill-badge">
+                           <img src="imagens/css3.png" alt="CSS3">
+                           <span>CSS3 (Modern UI)</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Grupo 3: Backend & Automation -->
+                  <div class="skill-category-card">
+                     <h3>Backend & Automation</h3>
+                     <div class="badges-container">
+                        <div class="skill-badge">
+                           <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js">
+                           <span>Node.js</span>
+                        </div>
+                        <div class="skill-badge">
+                           <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+                           <span>Git & GitHub</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Grupo 4: Professional Skills -->
+                  <div class="skill-category-card">
+                     <h3>Professional Skills</h3>
+                     <div class="badges-container">
+                        <span class="skill-badge-soft">Comunicação</span>
+                        <span class="skill-badge-soft">Trabalho em Equipe</span>
+                        <span class="skill-badge-soft">Adaptabilidade</span>
+                        <span class="skill-badge-soft">Liderança</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
             <article id="certificados">
-                <h2><ion-icon name="school-outline" class="icon-person"></ion-icon> Formação</h2>
-
-                <div id="formacao-container">
-                    <button class="curso-btn" id="certificado-modulo1">
-                        <div class="curso">
-                            <p class="period">2022 - 2023</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Modulo 1 Curso HTML5</p>
-                        </div>
-                    </button>
-
-                    <button class="curso-btn" id="certificado-modulo2">
-                        <div class="curso">
-                            <p class="period">2022 - 2023</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Modulo 2 Curso HTML5</p>
-                        </div>
-                    </button>
-
-                    <button class="curso-btn" id="certificado-modulo3">
-                        <div class="curso">
-                            <p class="period">2025</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Modulo 3 Curso HTML5</p>
-                        </div>
-                    </button>
-
-                    <button class="curso-btn" id="certificado-modulo4">
-                        <div class="curso">
-                            <p class="period">2025</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Modulo 4 Curso HTML5</p>
-                        </div>
-                    </button>
-
-                    <button class="curso-btn" id="certificado-modulo5">
-                        <div class="curso">
-                            <p class="period">2025</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Modulo 5 Curso HTML5</p>
-                        </div>
-                    </button>
-
-                    <button class="curso-btn" id="certificado-algoritmos">
-                        <div class="curso">
-                            <p class="period">2025</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Curso de Algoritmos Com Portugol Studio</p>
-                        </div>
-                    </button>
-
-                    <button class="curso-btn" id="curso-ia">
-                        <div class="curso">
-                            <p class="period">2025</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Curso de Inteligência Artificial Modulo 1</p>
-                        </div>
-                    </button>
-                    <!-- só falta inserir certificado, esqueci de emitir!
-                    <button class="curso-btn" id="curso-js">
-                        <div class="curso">
-                            <p class="period">2025-2026</p>
-                            <h3 class="inst">Curso Em Vídeo</h3>
-                            <p class="cert">Curso de JavaScript básico 40 horas</p>
-                        </div>
-                    </button>
-                </div>-->
-
+               <h2>
+                  <ion-icon name="school-outline" class="icon-person"></ion-icon>
+                  Formação
+               </h2>
+               <div id="formacao-container">
+               <button class="curso-btn" id="certificado-modulo1">
+                  <div class="curso">
+                     <p class="period">2022 - 2023</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Modulo 1 Curso HTML5</p>
+                  </div>
+               </button>
+               <button class="curso-btn" id="certificado-modulo2">
+                  <div class="curso">
+                     <p class="period">2022 - 2023</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Modulo 2 Curso HTML5</p>
+                  </div>
+               </button>
+               <button class="curso-btn" id="certificado-modulo3">
+                  <div class="curso">
+                     <p class="period">2025</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Modulo 3 Curso HTML5</p>
+                  </div>
+               </button>
+               <button class="curso-btn" id="certificado-modulo4">
+                  <div class="curso">
+                     <p class="period">2025</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Modulo 4 Curso HTML5</p>
+                  </div>
+               </button>
+               <button class="curso-btn" id="certificado-modulo5">
+                  <div class="curso">
+                     <p class="period">2025</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Modulo 5 Curso HTML5</p>
+                  </div>
+               </button>
+               <button class="curso-btn" id="certificado-algoritmos">
+                  <div class="curso">
+                     <p class="period">2025</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Curso de Algoritmos Com Portugol Studio</p>
+                  </div>
+               </button>
+               <button class="curso-btn" id="curso-ia">
+                  <div class="curso">
+                     <p class="period">2025</p>
+                     <h3 class="inst">Curso Em Vídeo</h3>
+                     <p class="cert">Curso de Inteligência Artificial Modulo 1</p>
+                  </div>
+               </button>
+               <!-- só falta inserir certificado, esqueci de emitir!
+                  <button class="curso-btn" id="curso-js">
+                      <div class="curso">
+                          <p class="period">2025-2026</p>
+                          <h3 class="inst">Curso Em Vídeo</h3>
+                          <p class="cert">Curso de JavaScript básico 40 horas</p>
+                      </div>
+                  </button>
+                  </div>-->
             </article>
             <!--fim ceritificados-->
             <article id="projetos">
-                <h2><ion-icon name="briefcase-outline" class="icon-person"></ion-icon> Projetos</h2>
-
-            <div id="project-container">
-                    <div class="projeto">
-                        <a href="projeto-video/video.html" target="_blank" class="link-projeto"><img src="imagens/projeto-01-videos.jpg" class="foto-projeto"></a>
-                        <div class="projeto-info">
-                            <p class="periodo">2022</p>
-                            <h3 class="titulo">Projeto de Vídeos</h3>
-                            <p>Projeto construído para aplicar inserção de vídeos</p>
-                            <details class="descricao">
-                                <summary>Saiba Mais...</summary>
-                                <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <div class="projeto">
-                        <a href="https://pedrohenriquesouza1.github.io/projeto-android/" class="link-projeto" target="_blank"><img src="imagens/projeto-03-android.jpg" class="foto-projeto"></a>
-                        <div class="projeto-info">
-                            <p class="periodo">2022</p>
-                            <h3 class="titulo">Projeto Android</h3>
-                            <p>Projeto construído como para aplicar conehcimentos de imagens dinânicas</p>
-                            <details class="descricao">
-                                <summary>Saiba Mais...</summary>
-                                <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <div class="projeto">
-                        <a href="https://pedrohenriquesouza1.github.io/projeto-social/" class="link-projeto" target="_blank"><img src="imagens/projeto-04-links.jpg" class="foto-projeto"></a>
-                        <div class="projeto-info">
-                            <p class="periodo">2025</p>
-                            <h3 class="titulo">Projeto Social</h3>
-                            <p>Projeto feito para testar o uso de imagens que rolam e o uso de botões também</p>
-                            <details class="descricao">
-                                <summary>Saiba Mais...</summary>
-                                <p>Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <div class="projeto">
-                        <a href="https://pedrohenriquesouza1.github.io/projeto-cordel/" class="link-projeto" target="_blank"><img src="imagens/projeto-02-cordel.jpg" class="foto-projeto" class="foto-peq"></a>
-                        <div class="projeto-info">
-                            <p class="periodo">2025</p>
-                            <h3 class="titulo">Projeto Cordel</h3>
-                            <p>Projeto construído para apmpliar domínio em imagens principlamente com efeito paralaxe e dar os primeiros passos na responsividade</p>
-                            <details class="descricao">
-                                <summary>Saiba Mais...</summary>
-                                <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <div class="projeto">
-                        <a href="https://pedrohenriquesouza1.github.io/projeto-login/" target="_blank" class="link-projeto"><img src="imagens/projeto-05-login.jpg" class="foto-projeto" class="foto-peq"></a>
-
-                        <div class="projeto-info">
-                            <p class="periodo">2025</p>
-                            <h3 class="titulo">Projeto Tela de Login</h3>
-                            <p>Projeto construído para dar importantes passos para o domínio de responsividade, media queries e efeitos suaves de transição</p>
-                            <details class="descricao">
-                                <summary>Saiba Mais...</summary>
-                                <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
-                            </details>
-                        </div>
-                    </div>
-
-                    <div class="projeto">
-                        <a href="https://gestao-revendedora.vercel.app/" target="_blank" class="link-projeto">
-                            <img src="imagens/projeto-07-gestao_revendedora.png" class="foto-projeto" class="foto-peq" alt="Projeto que gerencia estoque de revendoras de cosméticos">
-                        </a>
-                        <div class="projeto-info">
-                            <p class="periodo">2026</p>
-                            <h3 class="titulo">Gerenciador de estoque/Gerador de Recibos online</h3>
-                            <p>Esse projeto foi feito para facilitar o processo de gerenciamento de estoque e de cobrança de pedidos, ele pode ser usado por revendedoras de cosméticos, donos de pequenos comércios, ambulantes, etc...</p>
-                            <details class="descricao">
-                                <summary>Saiba mais...</summary>
-                                <p>Este projeto foi feito em pouco mais de 1 mês e meio, ele foi idealizado como primeiro projeto prático e ele soluciona um problema real, ele foi o meu primeiro projeto em JavaScript depois da conslusão do curso e eu aprendi na prática vários conceitos diferentes apenas lendo documentação, para saber mais sobre as minhas decisões técnicas ou olhar o código, acesse o meu repositório no GitHub.</p>
-                            </details>
-                        </div>
-                    </div>
-                </div>
+               <h2>
+                  <ion-icon name="briefcase-outline" class="icon-person"></ion-icon>
+                  Projetos
+               </h2>
+               <div id="project-container">
+                  <div class="projeto">
+                     <a href="projeto-video/video.html" target="_blank" class="link-projeto"><img src="imagens/projeto-01-videos.jpg" class="foto-projeto"></a>
+                     <div class="projeto-info">
+                        <p class="periodo">2022</p>
+                        <h3 class="titulo">Projeto de Vídeos</h3>
+                        <p>Projeto construído para aplicar inserção de vídeos</p>
+                        <details class="descricao">
+                           <summary>Saiba Mais...</summary>
+                           <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="projeto">
+                     <a href="https://pedrohenriquesouza1.github.io/projeto-android/" class="link-projeto" target="_blank"><img src="imagens/projeto-03-android.jpg" class="foto-projeto"></a>
+                     <div class="projeto-info">
+                        <p class="periodo">2022</p>
+                        <h3 class="titulo">Projeto Android</h3>
+                        <p>Projeto construído como para aplicar conehcimentos de imagens dinânicas</p>
+                        <details class="descricao">
+                           <summary>Saiba Mais...</summary>
+                           <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="projeto">
+                     <a href="https://pedrohenriquesouza1.github.io/projeto-social/" class="link-projeto" target="_blank"><img src="imagens/projeto-04-links.jpg" class="foto-projeto"></a>
+                     <div class="projeto-info">
+                        <p class="periodo">2025</p>
+                        <h3 class="titulo">Projeto Social</h3>
+                        <p>Projeto feito para testar o uso de imagens que rolam e o uso de botões também</p>
+                        <details class="descricao">
+                           <summary>Saiba Mais...</summary>
+                           <p>Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="projeto">
+                     <a href="https://pedrohenriquesouza1.github.io/projeto-cordel/" class="link-projeto" target="_blank"><img src="imagens/projeto-02-cordel.jpg" class="foto-projeto" class="foto-peq"></a>
+                     <div class="projeto-info">
+                        <p class="periodo">2025</p>
+                        <h3 class="titulo">Projeto Cordel</h3>
+                        <p>Projeto construído para apmpliar domínio em imagens principlamente com efeito paralaxe e dar os primeiros passos na responsividade</p>
+                        <details class="descricao">
+                           <summary>Saiba Mais...</summary>
+                           <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="projeto">
+                     <a href="https://pedrohenriquesouza1.github.io/projeto-login/" target="_blank" class="link-projeto"><img src="imagens/projeto-05-login.jpg" class="foto-projeto" class="foto-peq"></a>
+                     <div class="projeto-info">
+                        <p class="periodo">2025</p>
+                        <h3 class="titulo">Projeto Tela de Login</h3>
+                        <p>Projeto construído para dar importantes passos para o domínio de responsividade, media queries e efeitos suaves de transição</p>
+                        <details class="descricao">
+                           <summary>Saiba Mais...</summary>
+                           <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="projeto">
+                     <a href="https://gestao-revendedora.vercel.app/" target="_blank" class="link-projeto">
+                     <img src="imagens/projeto-07-gestao_revendedora.png" class="foto-projeto" class="foto-peq" alt="Projeto que gerencia estoque de revendoras de cosméticos">
+                     </a>
+                     <div class="projeto-info">
+                        <p class="periodo">2026</p>
+                        <h3 class="titulo">Gerenciador de estoque/Gerador de Recibos online</h3>
+                        <p>Esse projeto foi feito para facilitar o processo de gerenciamento de estoque e de cobrança de pedidos, ele pode ser usado por revendedoras de cosméticos, donos de pequenos comércios, ambulantes, etc...</p>
+                        <details class="descricao">
+                           <summary>Saiba mais...</summary>
+                           <p>Este projeto foi feito em pouco mais de 1 mês e meio, ele foi idealizado como primeiro projeto prático e ele soluciona um problema real, ele foi o meu primeiro projeto em JavaScript depois da conslusão do curso e eu aprendi na prática vários conceitos diferentes apenas lendo documentação, para saber mais sobre as minhas decisões técnicas ou olhar o código, acesse o meu repositório no GitHub.</p>
+                        </details>
+                     </div>
+                  </div>
+               </div>
             </article>
             <!--fim projetos-->
-        </section>
-    </main>
-        <footer>
-            <p>© 2025 <a href="https://github.com/pedrohenriquesouza1" target="_blank" rel="noopener noreferrer" class="footer-link">Pedro Henrique</a>, portfólio final para curso de HTML 5 e CSS do <a href="http://cursoemvideo.com" target="_blank" rel="noopener noreferrer" class="footer-link">Curso em vídeo</a></p>
-            <a href="mailto:ph3781838@gmail.com" class="footer-link">Contato 📞</a>
-        </footer>
-    </footer>
-    <script src="scripts/script.js"></script>
-    <script>
-   // Quando o usuário rolar até a section #skills, as barras animam
-        const skillsSection = document.querySelector('#skills');
-        const progressBars = document.querySelectorAll('.progress');
-   
+         </section>
+      </main>
+      <footer>
+         <p>© 2025 <a href="https://github.com/pedrohenriquesouza1" target="_blank" rel="noopener noreferrer" class="footer-link">Pedro Henrique</a>, portfólio final para curso de HTML 5 e CSS do <a href="http://cursoemvideo.com" target="_blank" rel="noopener noreferrer" class="footer-link">Curso em vídeo</a></p>
+         <a href="mailto:ph3781838@gmail.com" class="footer-link">Contato 📞</a>
+      </footer>
+      <script src="scripts/script.js"></script>
+
+      <script>
         const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-            progressBars.forEach(bar => {
-                 const finalWidth = bar.getAttribute('data-valor');
-                bar.style.width = finalWidth + "%";
-            });
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              // Adiciona um pequeno atraso baseado no índice para criar o efeito cascata
+              setTimeout(() => {
+                entry.target.classList.add('show');
+              }, index * 150);
             }
-        }, { threshold: 0.4 });
-   
-        observer.observe(skillsSection);
-    </script>       
-    <script src="scripts/btn.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+          });
+        }, {
+          threshold: 0.2
+        });
+
+        document.querySelectorAll('.skill-category-card').forEach((card) => {
+          observer.observe(card);
+        });
+      </script>
+
+      <script src="scripts/btn.js"></script>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+      </script>
+
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+      </script>
+   </body>
 </html>

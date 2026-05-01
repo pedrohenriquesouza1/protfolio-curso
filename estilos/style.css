@@ -217,43 +217,96 @@ h2 {
 
 /* fim do trecho de animação */
 
-.skill-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
-  gap: 30px;
+/* Nova Grid de Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.info{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.skill-category-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+    background-color: var(--fundo-principal); 
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
 }
 
-.nome {
-  font-weight: bolder;
-  color: var(--texto);
-  padding: 7px;
+.skill-category-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--destaque-inverso);
+    background: linear-gradient(145deg, var(--fundo-card), rgba(0, 119, 255, 0.05));
 }
 
-.por {
-  color: var(--destaque);
-  font-weight: bold;
+.skill-category-card.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.barra {
-  width: 100%;
-  height: 10px;
-  background-color: var(--fundo-principal);
-  border-radius: 6px;
+.skill-category-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: var(--destaque);
+    text-align: left;
+    border-bottom: 2px solid var(--destaque-inverso);
+    display: inline-block;
 }
 
-.progress {
-  height: 100%;
-  background-color: var(--destaque-inverso);
-  border-radius: 6px;
-  width: 0;
-  transition: width 2s ease-in-out; 
+.badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Estilo das Tags/Badges */
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--fundo-card);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+}
+
+.skill-badge img {
+    width: 18px;
+    height: 18px;
+}
+
+.skill-badge-soft {
+    background-color: var(--destaque-inverso);
+    color: var(--texto-inverso);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.skill-badge:hover {
+    transform: scale(1.1); /* Aumenta levemente */
+    background-color: var(--fundo-principal);
+    box-shadow: 0 5px 15px rgba(0, 119, 255, 0.2); /* Brilho suave da cor do seu destaque */
+}
+
+/* Se quiser que o ícone gire levemente no hover */
+.skill-badge:hover img {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+}
+
+/* Ajuste para o modo escuro se necessário */
+.escuro .skill-category-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .icon-skill {
